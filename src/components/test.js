@@ -7,12 +7,10 @@ class Test extends Component {
   }
 
   componentDidMount(){
-    fetch(`http://localhost:5000/pokemon`)
+    fetch(`http://35.173.179.2:3030/pokemon`)
       .then(res => res.json())
       .then(res => this.setState({pokemon: res}))
       .catch(err => console.log(err))
-
-    console.log(this.state)
   }
 
   render(){
