@@ -1,13 +1,13 @@
 import logo from './LogoMakr-1Hi0ZH.png';
 import React from 'react';
-import { withAuthenticator, AmplifySignOut, AmplifySignIn } from '@aws-amplify/ui-react';
+// import { withAuthenticator, AmplifySignOut, AmplifySignIn } from '@aws-amplify/ui-react';
 import './App.css';
 import Test from './components/test'
 
 function App() {
   return (
     <div className="App">
-      <AmplifySignIn />
+      {/* <AmplifySignIn /> */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default withAuthenticator(App);
+export default App;
