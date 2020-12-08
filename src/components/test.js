@@ -42,7 +42,7 @@ class Test extends Component {
       body: JSON.stringify(this.state.newPokemon)
     })
     .then(res => res.json())
-    .then(getAllPokemon())
+    // .then(getAllPokemon())
     .catch(error => console.log(error))
   }
 
