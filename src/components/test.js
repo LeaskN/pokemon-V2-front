@@ -11,6 +11,10 @@ class Test extends Component {
   }
 
   componentDidMount(){
+    this.getAllPokemon();
+  }
+
+  getAllPokemon(){
     // fetch(`http://35.173.179.2:3030/pokemon`)
     fetch(`http://localhost:3030/pokemon`) // part of new request when you update back end swap back to line above
       .then(res => res.json())
@@ -38,6 +42,7 @@ class Test extends Component {
       body: JSON.stringify(this.state.newPokemon)
     })
     .then(res => res.json())
+    .then(getAllPokemon())
     .catch(error => console.log(error))
   }
 
